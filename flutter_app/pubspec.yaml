@@ -1,0 +1,30 @@
+name: renpy_flutter
+description: Ren'Py Visual Novel Engine - Flutter Port
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.9.37
+  audioplayers: ^6.0.0
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+  path_provider: ^2.1.0
+  shared_preferences: ^2.2.0
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/audio/
+    - assets/scripts/
