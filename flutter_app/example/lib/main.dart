@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:renpy_flutter/renpy_flutter.dart';
 
 import 'screens/game_screen.dart';
-import 'src/display/image_cache.dart';
-import 'src/executor/game_executor.dart';
-import 'src/executor/script_manager.dart';
-import 'src/models/character.dart';
-import 'src/models/game_state.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

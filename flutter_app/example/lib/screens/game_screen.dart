@@ -2,16 +2,7 @@
 library;
 
 import 'package:flutter/material.dart';
-
-import '../src/ast/nodes.dart';
-import '../src/display/game_layer.dart';
-import '../src/display/image_cache.dart';
-import '../src/display/transitions.dart';
-import '../src/executor/game_executor.dart';
-import '../src/models/character.dart';
-import '../src/models/game_state.dart';
-import '../src/ui/dialogue_box.dart';
-import '../src/ui/menu_widget.dart';
+import 'package:renpy_flutter/renpy_flutter.dart';
 
 // ─── What's being shown ───────────────────────────────────────────────────────
 

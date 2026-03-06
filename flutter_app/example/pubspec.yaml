@@ -1,0 +1,25 @@
+name: renpy_flutter_example
+description: Example app demonstrating the renpy_flutter package.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  renpy_flutter:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/scripts/
+    - assets/images/
+    - assets/audio/
