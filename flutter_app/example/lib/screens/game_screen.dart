@@ -150,10 +150,15 @@ class _GameScreenState extends State<GameScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: GameLayerWidget(
-          layerState: _layers,
-          imageCache: widget.imageCache,
-          overlay: overlay,
+        child: Center(
+          child: AspectRatio(
+            aspectRatio: 9 / 16,
+            child: GameLayerWidget(
+              layerState: _layers,
+              imageCache: widget.imageCache,
+              overlay: overlay,
+            ),
+          ),
         ),
       ),
     );
