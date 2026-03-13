@@ -61,10 +61,18 @@ class _GameLoaderState extends State<_GameLoader> {
         name: 'Narrator',
         color: Colors.white,
       ));
+      _characters.register(const Character(
+        id: 'yuna',
+        name: '유나',
+        color: Color(0xFFFFB7C5),
+      ));
 
-      // Load script
+      // Load scripts
       final manager = ScriptManager();
-      await manager.loadAssets(['assets/scripts/script.rpy']);
+      await manager.loadAssets([
+        'assets/scripts/script.rpy',
+        'assets/scripts/sample_scene.rpy',
+      ]);
 
       if (!manager.hasLabel('start')) {
         throw Exception('No "start" label found in script.');
