@@ -150,15 +150,29 @@ class _GameScreenState extends State<GameScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: Center(
-          child: AspectRatio(
-            aspectRatio: 9 / 16,
-            child: GameLayerWidget(
-              layerState: _layers,
-              imageCache: widget.imageCache,
-              overlay: overlay,
+        child: Stack(
+          children: [
+            Center(
+              child: AspectRatio(
+                aspectRatio: 9 / 16,
+                child: GameLayerWidget(
+                  layerState: _layers,
+                  imageCache: widget.imageCache,
+                  overlay: overlay,
+                ),
+              ),
             ),
-          ),
+            if (Navigator.canPop(context))
+              Positioned(
+                top: 8,
+                left: 8,
+                child: IconButton(
+                  icon: const Icon(Icons.arrow_back_ios_new_rounded,
+                      color: Colors.white54, size: 20),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ),
+          ],
         ),
       ),
     );
