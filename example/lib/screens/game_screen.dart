@@ -26,7 +26,7 @@ class _ShowingMenu extends _DisplayMode {
 class GameScreen extends StatefulWidget {
   final GameExecutor executor;
   final CharacterRegistry characterRegistry;
-  final ImageCache imageCache;
+  final RenpyImageCache imageCache;
 
   const GameScreen({
     super.key,

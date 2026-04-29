@@ -17,7 +17,7 @@ class SceneLoaderPage extends StatefulWidget {
 class _SceneLoaderPageState extends State<SceneLoaderPage> {
   GameExecutor? _executor;
   final _characters = CharacterRegistry();
-  final _imageCache = ImageCache();
+  final _imageCache = RenpyImageCache();
   String? _error;
 
   @override

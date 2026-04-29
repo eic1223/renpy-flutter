@@ -5,14 +5,14 @@ library;
 
 import 'package:flutter/material.dart';
 
-class ImageCache {
+class RenpyImageCache {
   /// Base path for image assets.
   final String basePath;
 
   /// Optional explicit mapping: image name → asset path.
   final Map<String, String> _registry = {};
 
-  ImageCache({this.basePath = 'assets/images'});
+  RenpyImageCache({this.basePath = 'assets/images'});
 
   /// Register an image name → asset file mapping.
   void register(String imageName, String assetPath) {
