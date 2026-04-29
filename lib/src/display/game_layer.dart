@@ -53,7 +53,7 @@ class SpriteInfo {
 
 class GameLayerWidget extends StatelessWidget {
   final LayerState layerState;
-  final ImageCache imageCache;
+  final RenpyImageCache imageCache;
   final Widget? overlay; // dialogue / menu on top
 
   const GameLayerWidget({
@@ -93,7 +93,7 @@ class GameLayerWidget extends StatelessWidget {
 
 class _BackgroundLayer extends StatelessWidget {
   final String? imageName;
-  final ImageCache imageCache;
+  final RenpyImageCache imageCache;
   final TransitionType transition;
 
   const _BackgroundLayer({
@@ -120,7 +120,7 @@ class _BackgroundLayer extends StatelessWidget {
 
 class _SpriteLayer extends StatelessWidget {
   final SpriteInfo info;
-  final ImageCache imageCache;
+  final RenpyImageCache imageCache;
   final TransitionType transition;
 
   const _SpriteLayer({
