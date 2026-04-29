@@ -19,35 +19,35 @@ class SceneConfig {
   });
 }
 
-const kScenes = [
+final kScenes = [
   SceneConfig(
     title: '교실의 유나',
     description: '방과 후 교실에서 만난 유나와의 짧은 대화.',
     startLabel: 'classroom',
-    scripts: ['assets/scripts/scene_classroom.rpy'],
-    characters: [
+    scripts: const ['assets/scripts/scene_classroom.rpy'],
+    characters: const [
       Character(id: 'yuna', name: '유나', color: Color(0xFFFFB7C5)),
     ],
-    accentColor: Color(0xFFFFB7C5),
+    accentColor: const Color(0xFFFFB7C5),
   ),
   SceneConfig(
     title: '카페의 민호',
     description: '단골 카페에서 우연히 마주친 민호와의 이야기.',
     startLabel: 'cafe',
-    scripts: ['assets/scripts/scene_cafe.rpy'],
-    characters: [
+    scripts: const ['assets/scripts/scene_cafe.rpy'],
+    characters: const [
       Character(id: 'minho', name: '민호', color: Color(0xFF90CAF9)),
     ],
-    accentColor: Color(0xFF90CAF9),
+    accentColor: const Color(0xFF90CAF9),
   ),
   SceneConfig(
     title: '공원의 소라',
     description: '저녁 산책 중 벤치에 앉아 있던 소라를 만나다.',
     startLabel: 'park',
-    scripts: ['assets/scripts/scene_park.rpy'],
-    characters: [
+    scripts: const ['assets/scripts/scene_park.rpy'],
+    characters: const [
       Character(id: 'sora', name: '소라', color: Color(0xFFA5D6A7)),
     ],
-    accentColor: Color(0xFFA5D6A7),
+    accentColor: const Color(0xFFA5D6A7),
   ),
 ];
